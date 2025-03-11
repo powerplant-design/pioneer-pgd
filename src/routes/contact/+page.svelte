@@ -1,7 +1,3 @@
-<script context="module">
-	export const prerender = true;
-</script>
-
 <h1>CONTACT</h1>
 
 <h1>Welcome to SvelteKit</h1>
