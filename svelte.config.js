@@ -1,4 +1,4 @@
-import adapter from "@sveltejs/adapter-netlify";
+import adapter from '@sveltejs/adapter-netlify';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -8,7 +8,14 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter(),
+		target: '#svelte',
+		prerender: {
+			crawl: true,
+			enabled: true,
+			force: true,
+			pages: ['*']
+		}
 	}
 };
 
