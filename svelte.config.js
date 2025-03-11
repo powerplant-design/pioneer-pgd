@@ -10,10 +10,7 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		prerender: {
-			crawl: true,
-			enabled: true,
-			force: true,
-			pages: ['*']
+			crawl: true
 		}
 	}
 };
